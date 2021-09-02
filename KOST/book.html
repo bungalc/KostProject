@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>KOST Booking Page</title>
+      <link rel="stylesheet" href="master.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+            <div class="logo">
+                  <a href="index.html">KOST</a>
+            </div>
+            <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+            </ul>
+            <div class="burger">
+                  <div class="line1"></div>
+            </div>
+      </nav>
+      <div class="slideshow">
+            <div class="slideshow-item2">
+                  <img src="IMG/broklyn.jpeg">
+                  <div class="slideshow-item-text">
+                        <h5>
+                              Broklyn Room
+                        </h5>
+                         <h5>
+                              Rp 800.000
+                        </h5>
+                        <p>
+                              Compact and Personal
+                        </p>
+                  </div>
+            </div>
+
+            <div class="slideshow-item2">
+                  <img src="IMG/downtown.jpg">
+                  <div class="slideshow-item-text">
+                        <h5>
+                              Downtown Room
+                              Rp 1.500.000
+                        </h5>
+                        <p>
+                              Cozy and Spacy
+                        </p>
+                  </div>
+            </div>
+
+            <div class="slideshow-item2">
+                  <img src="IMG/newyork.jpg">
+                  <div class="slideshow-item-text">
+                        <h5>
+                              Newyork Room
+                        </h5>
+                          <h5>
+                                Rp 2.750.000
+                        </h5>
+                        <p>
+                              Huge room and Exquisite
+                        </p>
+                  </div>
+            </div>
+      </div>
+<div class="wrapper">
+    <div class="title">
+      Booking Kost
+    </div>
+    <div class="inputfield">
+    <div class="form">
+       <div class="inputfield">
+          <label>Nama Lengkap</label>
+          <input id="name" type="text" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>No KTP</label>
+          <input id="idcard" type="Number" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Nomor Telfon</label>
+          <input id="telp" type="Number" class="input">
+       </div>
+       <div class="inputfield">
+          <label>Jenis Kamar</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="broklyn">Broklyn</option>
+              <option value="downtown">Downtown</option>
+               <option value="newyork">Newyork</option>
+            </select>
+          </div>
+       </div>    
+        <div class="inputfield">
+          <label>Kelamin</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="Pria">Pria</option>
+              <option value="Wanita">Wanita</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Email</label>
+          <input id="email" type="text" class="input">
+       </div>  
+      <div class="inputfield">
+          <label>Tambahan</label>
+          <textarea class="textarea"></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Tanggal Masuk kost</label>
+          <input id="date" type="datetime-local" class="input">
+       </div> 
+      <div class="inputfield">
+        <button type="submit" class="btn" onclick="done()">PESAN</button>
+        <button type="submit" class="btn1" onclick="done()">GANTI JADWAL</button>
+      </div>
+    </div>
+</div>
+<script src="master.js"></script>
+<script type="text/javascript">
+  function submitted(){
+    var name = document.getElementById("name");
+    var idcard = document.getElementById("idcard");
+    var phone = document.getElementById("telp");
+    var email = document.getElementById("email");
+
+    if (name == '' || idcard =='' || phone =='' || email == '') {
+      alert("Please fill the blank fields!!!")
+  }else{
+    alert("Your booking has been saved, please complete the payment!!!")
+  }
+</script>
+<script type="text/javascript">
+  function done(){
+    alert("Your booking has been saved, please complete the payment!!!")
+  }
+</script>
+</body>
+</html>
